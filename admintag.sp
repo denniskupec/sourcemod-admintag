@@ -3,23 +3,23 @@
 
 public Plugin:myinfo =
 {
-	name = "admintag",
-	description = "Adds some tags to clients.",
-	author = "Dennis Kupec",
-	version = "1.0",
-	url = "https://github.com/denniskupec"
+   name = "admintag",
+   description = "Adds some tags to clients.",
+   author = "Dennis Kupec",
+   version = "1.0",
+   url = "https://github.com/denniskupec"
 };
 
 
 public OnPluginStart()
 {
-	HookEvent("player_team", Event, EventHookMode:1);
-	HookEvent("player_spawn", Event, EventHookMode:1);
+   HookEvent("player_team", Event, EventHookMode:1);
+   HookEvent("player_spawn", Event, EventHookMode:1);
 }
 
 public OnClientPutInServer(client)
 {
-	HandleTag(client);
+   HandleTag(client);
 }
 
 public Action:Event(Handle:event, String:name[], bool:dontBroadcast)
