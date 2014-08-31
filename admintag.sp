@@ -24,11 +24,11 @@ public OnClientPutInServer(client)
 
 public Action:Event(Handle:event, String:name[], bool:dontBroadcast)
 {
-	new client = GetClientOfUserId(GetEventInt(event, "userid"));
-	if (0 < client) {
+   new client = GetClientOfUserId(GetEventInt(event, "userid"));
+   if (0 < client) {
       HandleTag(client);
    }
-	return Plugin_Continue;
+   return Plugin_Continue;
 }
 
 HandleTag(client)
