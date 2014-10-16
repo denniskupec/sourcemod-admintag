@@ -40,6 +40,6 @@ HandleTag(client)
    } else if (GetUserFlagBits(client) & ADMFLAG_RESERVATION) { 
       CS_SetClientClanTag(client, "=[VIP]="); 
    } else {
-      CS_SetClientClanTag(client, "");
+      CS_SetClientClanTag(client, "[Pleb]");
    }													
 }
